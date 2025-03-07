@@ -1,5 +1,5 @@
 # 📦 Dashboard Order Analysis
-Project Analisis Data dengan Python Coding Camp 2025 by DBS Foundation
+Project Analisis Data dengan Python Coding Camp 2025 by DBS Foundation by Hafizha Aghnia Hasya
 
 ## How to Open Dashboard - Anaconda
 Untuk membuka dashboard di lokal dengan Anaconda, lakukan ini pada Windows PowerShell :
