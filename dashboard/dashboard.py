@@ -10,8 +10,9 @@ st.title("📦E-Commerce Business Insights Dashboard📦")
 # load dataset
 @st.cache_data
 
-print("Current working directory:", os.getcwd())  # Cek direktori kerja
-print("Files in directory:", os.listdir("."))  # Cek file dalam folder
+# Debugging - Cek apakah file CSV tersedia
+st.write("📌 Current working directory:", os.getcwd())
+st.write("📌 Files in directory:", os.listdir("."))
 
 orders_df = pd.read_csv("orders_df.csv", parse_dates=['order_purchase_timestamp'])
 seller_df = pd.read_csv("seller_df.csv")
