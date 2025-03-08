@@ -8,6 +8,7 @@ import seaborn as sns
 st.title("📦E-Commerce Business Insights Dashboard📦")
 
 # load dataset
+@st.cache_data
 orders_df = pd.read_csv("orders_df.csv", parse_dates=['order_purchase_timestamp'])
 seller_df = pd.read_csv("seller_df.csv")
 rfm_df = pd.read_csv("rfm_df.csv")
