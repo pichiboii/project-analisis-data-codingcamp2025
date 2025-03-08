@@ -8,10 +8,10 @@ import seaborn as sns
 st.title("📦E-Commerce Business Insights Dashboard📦")
 
 # load dataset
-orders_df = pd.read_csv('orders_df.csv', parse_dates=['order_purchase_timestamp'])
-seller_df = pd.read_csv('seller_df.csv')
-rfm_df = pd.read_csv('rfm_df.csv')
-sellers_geolocation_df = pd.read_csv('sellers_geolocation_df.csv')
+orders_df = pd.read_csv("orders_df.csv", parse_dates=['order_purchase_timestamp'])
+seller_df = pd.read_csv("seller_df.csv")
+rfm_df = pd.read_csv("rfm_df.csv")
+sellers_geolocation_df = pd.read_csv("sellers_geolocation_df.csv")
 
 # sidebar untuk filter tanggal
 st.sidebar.header("Filter Waktu")
