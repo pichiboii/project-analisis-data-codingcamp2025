@@ -3,18 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-import os
 
 # judul dashboard
 st.title("📦E-Commerce Business Insights Dashboard📦")
 
 # load dataset
 @st.cache_data
-
-# Debugging - Cek apakah file CSV tersedia
-print("Current working directory:", os.getcwd())  # Cek direktori kerja
-print("Files in directory:", os.listdir("."))  # Cek file dalam folder
-
 orders_df = pd.read_csv("orders_df.csv", parse_dates=['order_purchase_timestamp'])
 seller_df = pd.read_csv("seller_df.csv")
 rfm_df = pd.read_csv("rfm_df.csv")
